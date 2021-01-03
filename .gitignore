@@ -4,3 +4,5 @@ node_modules
 dist
 .vscode
 .DS_Store
+*_BK.ejs
+*_BK.html
