@@ -5,84 +5,310 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <title>D'Perfume 香水電商網站</title>
+    <!-- icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" /> -->
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header class="sticky-top">
+	<nav class="navbar navbar-expand-md navbar-light p-0 py-md-2 px-md-3">
+		<div class="container-fluid container-md">
+			<h1 class="navbar-logo ml-4 ml-md-0 mb-0">
+				<a href="index.html">D'Perfume 香水電商網站</a>
+			</h1>
+			<a class="text-secondary d-inline-block d-md-none ml-auto mr-3 position-relative" href="#">
+				<span class="material-icons">shopping_cart</span>
+				<span class="badge badge-pill badge-primary position-absolute">3</span>
+			</a>
+			<button class="navbar-toggler py-2 px-3 ml-2" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="toggler-bar-wrap position-relative">
+					<span class="toggler-bar toggler-bar-top"></span>
+					<span class="toggler-bar toggler-bar-middle"></span>
+					<span class="toggler-bar toggler-bar-bottom"></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item order-md-1">
+						<a class="nav-link h5 text-center py-3 py-md-2 mr-md-3" href="product.html">
+							<span class="material-icons d-none d-md-inline-block">store</span>
+							Product
+						</a>
+					</li>
+					<li class="nav-item order-2 order-md-1">
+						<a class="nav-link h5 text-center py-3 py-md-2 mr-md-3" href="login.html">
+							<span class="material-icons d-none d-md-inline-block">person</span>
+							log in
+						</a>
+					</li>
+					<li class="nav-item order-md-1">
+						<a class="nav-link h5 text-center py-3 py-md-2 mr-md-3" href="wishlist.html">
+							<span class="material-icons d-none d-md-inline-block">favorite</span>
+							Wishlist
+						</a>
+					</li>
+					<li class="nav-item order-md-1 d-block d-md-none">
+						<a class="nav-link h5 text-center py-3 py-md-2 mr-md-3" href="blog.html">
+							Blog
+						</a>
+					</li>
+					<li class="nav-item order-md-1 d-block d-md-none">
+						<a class="nav-link h5 text-center py-3 py-md-2 mr-md-3" href="contact.html">
+							Contact
+						</a>
+					</li>
+					<li class="nav-item order-md-1 d-none d-md-block">
+						<a class="nav-link h5 text-center py-3 py-md-2" href="#">
+							<span class="material-icons">shopping_cart</span>
+							Cart(3)
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>    
+<!-- banner -->
+<section class="banner bg-cover mb-7 mb-md-9">
+  <div class="container h-100 d-flex flex-column justify-content-center">
+    <div class="row" data-aos="fade-down" data-aos-duration="2500">
+      <div class="col-12 col-md-5 offset-md-7 mb-3 text-white">
+        <h2 class="banner__title h1">Perfume your day</h2>
+        <p class="banner__text h4">A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that according to the person who wears it.</p>
+      </div>
+      <div class="col-12 col-md-4 offset-md-7">
+        <a href="product.html" class="banner__btn-link btn btn-block btn-outline-white rounded-pill">Shop now</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+<!-- rec 推薦品 -->
+<section class="rec mb-7 mb-md-9">
+  <ul class="container">
+    <li class="row no-gutters flex-column-reverse flex-md-row mb-6 mb-md-0">
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="col-md-8 h-100 d-flex flex-column justify-content-center px-0"
+          data-aos="fade-up" data-aos-duration="2000">
+          <h3 class="h2 font-weight-bold">Gabrielle CHANEL</h3>
+          <p class="h5">全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
+          <a href="product-detail.html" class="text-primary py-3 pr-3 mr-auto">查看更多</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-2 mb-md-0">
+        <div class="rec-img bg-cover" data-aos="fade-up"
+          style="background-image: url('assets/images/index2.jpg');">
+        </div>
+      </div>
+    </li>
+    <li class="row no-gutters flex-column-reverse flex-md-row-reverse mb-6 mb-md-0">
+      <div class="col-12 col-md-6 d-flex justify-content-center"
+        data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-md-8 h-100 d-flex flex-column justify-content-center px-0">
+          <h3 class="h2 font-weight-bold">Five O’clock Au Gingembre</h3>
+          <p class="h5">生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。</p>
+          <a href="product-detail.html" class="text-primary py-3 pr-3 mr-auto">查看更多</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-2 mb-md-0">
+        <div class="rec-img bg-cover" data-aos="fade-up"
+          style="background-image: url('assets/images/index3.png');">
+        </div>
+      </div>
+    </li>
+    <li class="row no-gutters flex-column-reverse flex-md-row mb-6 mb-md-0">
+      <div class="col-12 col-md-6 d-flex justify-content-center"
+        data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-md-8 h-100 d-flex flex-column justify-content-center px-0">
+          <h3 class="h2 font-weight-bold">CHANEL N°5</h3>
+          <p class="h5">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+          <a href="product-detail.html" class="text-primary py-3 pr-3 mr-auto">查看更多</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-2 mb-md-0">
+        <div class="rec-img bg-cover" data-aos="fade-up"
+          style="background-image: url('assets/images/index4.jpg');
+          background-position: 30% center;">
+        </div>
+      </div>
+    </li>
+    <li class="row no-gutters flex-column-reverse flex-md-row-reverse mb-6 mb-md-0">
+      <div class="col-12 col-md-6 d-flex justify-content-center"
+        data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-md-8 h-100 d-flex flex-column justify-content-center px-0">
+          <ol class="list-unstyled">
+            <li class="mb-4 mb-md-8 mt-2 mt-md-0">
+              <h4 class="h4 font-weight-bold mb-1">1. <br>Levels of Preventive Maintenance Compliance</h4>
+              <p>The core idea of preventative maintenance is the performance of proactive actions against unscheduled downtime in order to identify potential defects before they evolve into something more severe.</p>
+            </li>
+            <li class="mb-4 mb-md-8 mt-md-1">
+              <h4 class="h4 font-weight-bold mb-1">2. <br>Percentage of Planned Maintenance</h4>
+              <p>The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date range over the total number of hours of a service performed by the technicians.</p>
+            </li>
+            <li class="mb-4 mb-md-9 mt-md-1">
+              <h4 class="h4 font-weight-bold mb-1">3. <br>Critical percentage of planned maintenance</h4>
+              <p>Calculating the critical percentage of planned maintenance will help you prioritize the most important operations that should be performed immediately.</p>
+            </li>
+            <a href="product-detail.html" class="btn btn-outline-dark btn-block rounded-pill custom-btn">Plan a free online training</a>
+          </ol>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-2 mb-md-0">
+        <div class="rec-img-lg bg-cover" data-aos="fade-up"
+          style="background-image: url('assets/images/index5.jpg');">
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<!-- 產品 -->
+<section class="bg-light py-6 py-md-7 mb-7 mb-md-9">
+  <div class="container">
+    <ul class="row list-unstyled" data-aos="fade-up" data-aos-duration="2500">
+      <li class="col-12 col-md-4 mb-6 mb-md-0">
+        <a href="product-detail.html" class="card">
+          <div class="card-img-lg bg-cover mb-2"
+            style="background-image: url('assets/images/index6.jpg')">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Poppy & Barley</h4>
+            <p class="card-text mb-1 mb-md-3">Jo Malone</p>
+            <p class="card-text">NT$1,380
+              <del class="ml-2 text-secondary text-through">NT$1,580</del>
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="col-12 col-md-4 mb-6 mb-md-0">
+        <a href="product-detail.html"class="card">
+          <div class="card-img-lg bg-cover mb-2"
+            style="background-image: url('assets/images/index7.jpg')">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Body Wash</h4>
+            <p class="card-text mb-1 mb-md-3">Curology</p>
+            <p class="card-text">NT$1,580</p>
+          </div>
+        </a>
+      </li>
+      <li class="col-12 col-md-4">
+        <a href="product-detail.html" class="card">
+          <div class="card-img-lg bg-cover mb-2 card-cover"
+            style="background-image: url('assets/images/index8.jpg')">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Apple Cider Vinegar Capsule</h4>
+            <p class="card-text mb-1 mb-md-3">Tonik</p>
+            <p class="card-text">NT$1,580</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Bottle-Recycling 回收 -->
+<section class="recycle mb-7 mb-md-9">
+  <div class="container">
+    <div class="row mb-6 mb-md-0">
+      <div class="col-12 col-md-8 mb-2 mb-md-0">
+        <div class="recycle-img bg-cover" data-aos="fade-up"
+          style="background-image: url('assets/images/index9.jpg');">
+        </div>
+      </div>
+      <div class="col-12 col-md-4 d-flex flex-column justify-content-center"
+        data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="h2 font-weight-bold">Bottle-Recycling</h3>
+        <p class="h5 mb-3">Recycle your used empty bottles and be rewarded!</p>
+        <p>For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.</p>
+        <a href="recycle.html" class="text-primary py-3 pr-3 mr-auto">查看更多</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- subscribe 訂閱 -->
+<section class="subscribe bg-cover"
+  style="background-image: url('assets/images/index10.jpg');">
+  <div class="container">
+    <div class="row" data-aos="fade-down" data-aos-duration="2000">
+      <div class="col-12 col-md-4">
+        <h3 class="h2 mb-4 text-secondary font-weight-bold">記得<br>訂閱以獲取更多資訊！</h3>
+        <form action="" method="post">
+          <div class="input-group">
+            <input type="text" class="custom-input form-control p-3 h-100" placeholder="Your email address" aria-label="Your email address">
+            <div class="input-group-append">
+              <button type="submit" class="subscribe__btn btn btn-primary px-5">Subscribe</button>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </div>
         </form>
       </div>
-    </nav>
-
+    </div>
+  </div>
+</section>
+    <footer class="bg-primary py-4">
+  <div class="container-fluid container-md d-flex">
+    <div class="d-flex align-items-center">
+      <a class="d-inline-block" href="index.html">
+        <img src="/assets/images/dPerfume-white.png" alt="D'Perfume 香水電商網站">
+      </a>
+      <p class="text-white font-size-sm ml-4">© 2020. All Rights Reserved.</p>
+    </div>
+    <ul class="nav footer-nav ml-auto d-none d-md-flex"> 
+      <li class="nav-item">
+        <a href="products.html" class="h5 nav-link text-white">Product</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="h5 nav-link text-white">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="h5 nav-link text-white">Contact</a>
+      </li>
+    </ul>
+  </div>
+</footer>  <!-- Bootstrap4
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ -->    
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     
-<div class="container">
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-    <footer class="footer">
-      footer
-    </footer>
-
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-  </body>
 
+    <script>
+      AOS.init();
+      // navbar 背景
+      $(window).scroll(function(e) {
+        if ($(window).scrollTop() > 55) {
+          // $('header').addClass('fixed-top');
+          if ($(".navbar").hasClass("bg-white")) {
+            $(".navbar").toggleClass("bg-light-opacity");
+            $('.navbar').removeClass('bg-white');
+          }
+        } else {
+          // $("header").removeClass("fixed-top");
+          $(".navbar").addClass("bg-white");
+          $('.navbar').removeClass('bg-light-opacity');
+        }
+      })
+
+      // 漢堡動畫
+      $(document).ready(function(){
+        $('.navbar-toggler').on('click',function(){
+          $('.toggler-bar-top').toggleClass('toggler-bar-top-rotate');
+          $('.toggler-bar-bottom').toggleClass('toggler-bar-bottom-rotate');
+          $('.toggler-bar-middle').toggleClass('d-none');
+        })
+      })
+    </script>
+  </body>
 </html>
