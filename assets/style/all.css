@@ -12519,7 +12519,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar-logo a {
-  background: url("/assets/images/dPerfume.png") left top no-repeat;
+  background: url("./../images/dPerfume.png") left top no-repeat;
   color: transparent;
   font-size: 0;
   height: 38px;
@@ -12639,7 +12639,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .banner {
-  background-image: url("/assets/images/index1.jpg");
+  background-image: url("./../images/index1.jpg");
   height: calc(100vh - 56px);
 }
 
