@@ -1,0 +1,49 @@
+.banner {
+  background-image: url('/assets/images/index1.jpg');
+  height: calc(100vh - 56px);
+  
+  &__title {
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+  &__text {
+    @include mobile {
+      font-size: 1.25rem;
+    }
+  }
+  &__btn-link {
+    border-width: 2px;
+    font-size: 1.75rem;
+  }
+}
+
+// rec 推薦品
+.rec {
+  &-img {
+    padding-top: 100%;
+  }
+  &-img-lg {
+    padding-top: calc(1080 / 555 * 100%);
+  }
+  .custom-btn {
+    border-width: 2px;
+    font-size: 20px;
+    padding: 13px 0;
+  }
+}
+
+// Bottle-Recycling 回收
+.recycle-img {
+  padding-top: calc(520 / 730 * 100%);
+}
+
+// subscribe 訂閱
+.subscribe {
+  height: 600px;
+  padding-top: 312px;
+  
+  .custom-input {
+    border: 2px solid $primary;
+  }
+}

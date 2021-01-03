@@ -1,0 +1,49 @@
+html {
+  font-size: $font-size-base;
+}
+body {
+  color: $black;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+	text-decoration: none !important;
+	display: block;
+  color: $black;
+  
+  &:hover {
+    // color: darken($link-color, 5%);
+    color: #ac8a46;
+  }
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6, p {
+  margin-bottom: 0;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: normal;
+  // line-height: 1.2;
+}
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+.font-size {
+  &-sm {
+    font-size: $font-size-sm;
+  }
+  &-xs {
+    font-size: $font-size-xs;
+  }
+}
+.material-icons {
+  vertical-align: bottom;
+}
+.line-height-1 {
+  line-height: 1;
+}

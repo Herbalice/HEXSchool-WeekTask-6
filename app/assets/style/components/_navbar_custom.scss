@@ -1,0 +1,94 @@
+// navbar
+.navbar {
+  z-index: 999;
+  transition: .5s linear;
+}
+.navbar {
+  &-logo a {
+    background: url('/assets/images/dPerfume.png') left top no-repeat;
+    color: transparent;
+    font-size: 0;
+    height: 38px;
+    width: 128px;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+  }
+
+  &-toggler {
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    &-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.navbar-collapse {
+  background-color: transparent;
+  @include mobile {
+    background-color: $secondary;
+  }
+}
+.navbar .nav-link,
+.footer-nav .nav-link {
+  line-height: 1.2;
+}
+.navbar-light .navbar-nav .nav-link {
+  @include mobile {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    &:hover {
+      background-color: $light;
+      color: $primary;
+    }
+  }
+}
+
+// 手機版 標籤 (Badge)
+.d-md-none .badge.position-absolute {
+  right:-15px;
+  top:-5px;
+}
+
+// 漢堡toggler-bar 
+.toggler-bar-wrap {
+  height: 30px;
+  width: 30px;
+}
+.toggler-bar {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background-color: $secondary;
+  border-radius: 10px;
+  transition: .2s;
+}
+.toggler-bar-top {
+  top: 0px;
+}
+.toggler-bar-middle {
+  top: 10px;
+}
+.toggler-bar-bottom {
+  top: 20px;
+}
+.toggler-bar-top-rotate {
+  transform-origin: left top;
+  transform: rotate(45deg);
+}
+.toggler-bar-bottom-rotate {
+  transform-origin: left bottom;
+  transform: rotate(-45deg);
+}
+
+
+
+//products-nav
+.products-nav .nav-link {
+  padding: 14px 0;
+}

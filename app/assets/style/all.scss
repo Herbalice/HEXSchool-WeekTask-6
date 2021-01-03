@@ -1,3 +1,27 @@
+@charset "UTF-8";
+// 字型
+// @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+
+// bootstrap
 @import "functions";
-@import "./helpers/variables";
+@import "./helpers/variables_custom";
 @import "bootstrap";
+
+// base
+@import "base/base";
+
+// mixins
+@import "mixins/mixins_custom";
+
+// components
+@import "components/card_custom";
+@import "components/navbar_custom";
+@import "components/pagination_custom";
+
+// utilities
+
+// layout
+
+// pages
+@import "pages/index";
+@import "pages/product";
